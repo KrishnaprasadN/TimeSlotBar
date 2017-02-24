@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp" >
+
+    <!--9:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_one"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/div_one"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="39dp"
+            android:layout_below="@+id/nine"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/nine"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_one"
+            android:background="@drawable/left_edge"/>
+    </RelativeLayout>
+
+    <!--9:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_two"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/nine_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_two"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/nine_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/nine_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_two"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--10:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_three"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_three"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/ten"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/ten"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_three"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--10:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_four"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/ten_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_four"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/ten_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_four"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/ten_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_four"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--11:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_five"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_five"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/eleven"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_five"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/eleven"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_five"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--11:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_six"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/eleven_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_six"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/eleven_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_six"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/eleven_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_six"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--12:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_seven"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_seven"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/twelve"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_seven"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/twelve"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_seven"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--12:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_eight"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/twelve_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_eight"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/twelve_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_eight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/twelve_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_eight"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--1:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_nine"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_nine"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/thirteen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_nine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/thirteen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_nine"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--1:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_ten"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/thirteen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_ten"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/thirteen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_ten"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/thirteen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_ten"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--2:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_eleven"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/fourteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_eleven"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/fourteen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/fourteen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_eleven"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--2:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_twelve"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/fourteen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_twelve"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/fourteen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/fourteen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_twelve"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--3:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_thirteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_thirteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/fifteen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_thirteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/fifteen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_thirteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--3:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_fourteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/fifteen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_fourteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/fifteen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_fourteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/fifteen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_fourteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--4:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_fifteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/sixteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_fifteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/sixteen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_fifteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/sixteen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_fifteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--4:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_sixteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/sixteen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_sixteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/sixteen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_sixteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/sixteen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_sixteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--5:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_seventeen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/seventeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_seventeen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/seventeen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_seventeen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/seventeen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_seventeen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--5:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_eighteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/seventeen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_eighteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/seventeen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_eighteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/seventeen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_eighteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--6:00 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_nineteen"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/eighteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:textColor="@color/bgBlue"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/div_nineteen"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_big_div_height"
+            android:layout_below="@+id/eighteen"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_nineteen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/eighteen"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_nineteen"
+            android:background="@drawable/repeat_img"/>
+    </RelativeLayout>
+
+    <!--6:30 Cell -->
+    <RelativeLayout
+        android:id="@+id/unit_twenty"
+        android:layout_width="@dimen/unit_width"
+        android:layout_height="@dimen/time_unit_height">
+
+        <TextView
+            android:id="@+id/eighteen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/div_twenty"
+            android:layout_width="@dimen/time_unit_big_divider_height"
+            android:layout_height="@dimen/time_unit_small_div_height"
+            android:layout_below="@+id/eighteen_1"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/cell_twenty"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/time_unit_cell_height"
+            android:layout_below="@+id/eighteen_1"
+            android:layout_marginTop="@dimen/time_unit_cell_margin_top"
+            android:layout_toRightOf="@+id/div_twenty"
+            android:background="@drawable/right_edge"/>
+    </RelativeLayout>
+</LinearLayout>
